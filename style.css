@@ -75,12 +75,18 @@ nav {
   align-items: center;
   flex: wrap;
 }
+
+.nav-links ul li{
+  margin: 0 5em;
+}
+
 nav ul {
   display: flex;
   flex: 1 1 60rem;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  margin-right: -10em;
 }
 
 #logo {
