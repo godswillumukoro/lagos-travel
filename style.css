@@ -89,6 +89,41 @@ nav ul {
   margin-right: -10em;
 }
 
+/*MOBILE MENU STYLE*/
+.mobile-nav-links{
+  display: none ;
+  color: white;
+  position: absolute;
+  right: 0;
+  height: 23vh;
+  width: 40vh;
+  background-color: #131c27; 
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+
+.mobile-nav-links li{
+  position: relative;
+  height: 1000px;
+  right: 30px;
+  top: 30px;
+  border-top: 3px solid #26374d;
+  width: 34vh;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.mobile-nav-links li:hover{
+  background-color: #26374d;
+}
+
+
+/* HIDE HAMBURGER ICON ON DESKTOP */
+nav .fa-bars{
+  display: none;
+}
+
 #logo {
   flex: 2 1 40rem;
   font-family: "Pattaya", sans-serif;
@@ -221,8 +256,25 @@ nav ul {
   nav {
     text-align: center;
   }
+
+  /* HAMBURGER MENU STYLE*/
+  nav .fa-bars{
+    display: block;
+    font-size: 3.5rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  nav ul{
+    display: none;
+  }
+
   #logo {
     padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 4rem;
+    z-index: 1;
   }
   .cloud {
     height: 40rem;
