@@ -63,6 +63,9 @@ button:hover {
 .main-head {
   background: #131c27;
   color: whitesmoke;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 nav {
   display: flex;
@@ -71,19 +74,20 @@ nav {
   padding: 2rem;
   min-height: 10vh;
   align-items: center;
-  flex: wrap;
+  flex-wrap: wrap;
 }
 nav ul {
   display: flex;
-  flex: 1 1 60rem;
+  flex: 1 1 40rem;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
 
-.logo {
+#logo {
   flex: 2 1 40rem;
   font-family: "Pattaya", sans-serif;
+  /* font-weight: 400; */
 }
 
 .hero {
@@ -296,10 +300,11 @@ button:focus {
     text-align: center;
   }
   #logo {
-    padding: 1rem;
+    padding: 2rem;
   }
   .cloud {
     height: 40rem;
+    pointer-events: none;
   }
   .moving-cloud-1 {
     z-index: -1;
@@ -312,5 +317,8 @@ button:focus {
     -webkit-text-fill-color: whitesmoke;
     border-radius: 1rem;
     padding: 3rem;
+  }
+  .form-wrapper input {
+    padding: 0.2rem;
   }
 }
