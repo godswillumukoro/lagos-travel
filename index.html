@@ -6,47 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@200;500&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="./img/globe.png">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <title>Lagos Travel | Taking you to the center of Lagos</title>
+    <title>LagosTravel | Taking you to Lagos, The most populous city in Nigeria and the second largest city in Africa</title>
 </head>
 <body>
     <header class="main-head">
         <nav>
-            <h1 id="logo">LagosTravel</h1>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#locations">Visit</a></li>
-                    <li><a href="#benefit">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!--MOBILE NAV MENU-->
-            <div>
-                <ul class="mobile-nav-links">
-                    <li><a href="#locations">Visit</a></li>
-                    <li><a href="#benefit">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <i class="fas fa-bars"></i>
+            <h1 class="logo">LagosTravel</h1>
+            <ul>
+                <li><a href="#locations">Economy</a></li>
+                <li><a href="#benefit">Culture</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section class="hero">
         <h2>Welcome to Lagos.</h2>
-        <h3>The most populous city in Nigeria and the <br> second largest city in Africa</h3>
+        <h3>The the most populous city in Nigeria and the <br> second largest city in Africa</h3>
         <button>Visit Now</button>
     </section>
     <section id=locations>
         <header class="locations-head">
             <h2>The Major Financial Centre.</h2>
-            <h3>Lagos is a major financial centre for all of Africa and is the economic hub of Lagos State and Nigeria at large.</h3>
+            <h3>The city of Lagos is a major economic focal point in Nigeria, generating around 10% of the country's GDP</h3>
+            <h3>Most commercial and financial business is carried out in the central business district situated on the island</h3>
+            <h3>This is also where most of the country's commercial banks, financial institutions and major corporations are headquartered</h3>
             <img src="./img/naira.png" alt="moving cloud" class="moving-cloud-1 cloud">
             <img src="./img/naira.png" alt="moving cloud" class="moving-cloud-2 cloud">
         </header>
     </section>
-    </body>
-    <!--JAVASCRIPT LINK-->
-    <script src="./script.js"></script>
+    <section class="benefits" id="benefit">
+        <header class="benefits-head">
+            <h2>The Lagos Culture</h2>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="./img/music-note.png" alt="">
+                </div>
+                <h4>Music</h4>
+                <p>Lagos is famous throughout Africa for its music scene, Lagos has given birth to a variety of styles such as juju, fuji an Afrobeats</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                <img src="./img/clapperboard.png" alt="">
+                </div>
+                <h4>Movie</h4>
+                <p>Lagos is the centre of the Nigerian movie industry, often referred to as 'Nollywood'. Idumota market on Lagos Island is the primary distribution centre</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                <img src="./img/palette.png" alt="">
+                </div>
+                <h4>Arts</h4>
+                <p>The National Arts Theatre, located at Iganmu is home to the primary centre for the performing arts and artistes in Nigeria</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="form-wrapper">
+            <header class="form-head">
+                <h2>Contact Us</h2>
+            </header>
+            <form action="https://formspree.io/f/xleoqylk" method="POST">
+                <div class="name-form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="email-form">
+                    <label for="email">Email:</label>
+                    <input type="email" name="_replyto" required>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <h5>Made with ❤️ by <a href="https://twitter.com/umuks_">Godswill Umukoro</a></h5>
+            <ul>
+                <li><a href="#"><img src="./icons/twitter.svg" alt=""></a></li>
+                <li><a href="#"><img src="./icons/youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="./icons/instagram.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
